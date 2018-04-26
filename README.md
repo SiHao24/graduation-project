@@ -1,5 +1,7 @@
-# book_borrow
-图书借阅管理,bootstrap+php+mysql
+
+
+# graduation-project
+毕业设计 图书借阅管理系统的设计与实现 bootstrap+mySQL+PHP
 #### 模块
 1. 图书展示
 2. 借阅生成清单
@@ -14,3 +16,5 @@
 2. 归还的删除
 3. 留言回复
 ![](http://oqv18q399.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170601164324.jpg)
+
+
