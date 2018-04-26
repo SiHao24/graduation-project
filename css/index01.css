@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(../images/image1.jpg)  no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    background-color:#CCCCCC;
+}
+.header{
+    font-size: 36px;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.content .avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 150px;
+    background: url(../images/avatar.jpg) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.content .theme{
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    margin-top: 350px;
+    position: relative;
+    cursor: pointer;
+}
+.theme .forward{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    width: 660px;
+    font-size: 28px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+.arrow {
+    position: absolute;
+    left: 490px;
+    top: 5px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../images/right-arrow.png) no-repeat center;
+}
