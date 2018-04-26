@@ -10,10 +10,37 @@
 		<title>神圣的管理页面</title>
 		<style>
 			table tr td input{
-				height: 20px;
+				height: 30px;
 			}
 			.update-input{
-				height: 60px;
+				height: 50px;
+				width: 500px;
+			}
+			.update-input input{
+				width: 132px;
+			}
+			th, td{
+				height: 30px;
+				line-height: 30px;
+				border: 1px solid #000;
+			}
+			.body-tab-ele{
+				border: 1px solid rgba(0, 0, 0, .2);
+				border-radius: 6px;
+				/* position: relative; */
+			}
+			.control{
+				display: inline-block;
+				width: 100px;
+				border: none;
+			}
+			.add-book{
+				display: inline-block;
+				width: 60px;
+				margin-top: 2px;
+			}
+			.space{
+				margin-top: 10px;
 			}
 		</style>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
@@ -51,8 +78,8 @@
 				$sql = "select * from book";
 				$pdo -> exec('set names utf8');
 			?>
-			<div class="alert alert-info">全部图书列表</div>
-			<table border="1">
+			<div class="alert alert-info">全部图书信息表</div>
+			<table border="1" style="width: 500px;">
 				<thead>
 					<tr>
 						<th>编号</th>
@@ -82,8 +109,8 @@
 					<?php } ?>
 						<tr class="update-input">
 							<form action="bookinsert.php" method="post">
-								<td> 请输入 </td>
-								<td>
+								<td class="control space"> 请输入 </td>
+								<td class="book-name">
 									<input type="text" name="name"  >
 								</td>
 								<td>
@@ -98,14 +125,14 @@
 								<td>
 									<input type="date" name="publish_at"   >
 								</td>
-								<td>
+								<td class="num">
 									<input type="text" name="price"   >
 								</td>
-								<td>
+								<td class="num">
 									<input type="text" name="number"   >
 								</td>
-								<td>
-									<button type="submit" class="admin-add">添加</button>
+								<td class="control">
+									<button type="submit" class="add-book">添加</button>
 								</td>
 							</form>
 						</tr>
@@ -122,7 +149,7 @@
 				$sql = "select * from user";
 				// $pdo -> exec('set names utf8');
 			?>
-			<div class="alert alert-info">用户列表</div>
+			<div class="alert alert-info">全部用户信息表</div>
 			<table border="1" class="table table-hover">
 				<thead>
 					<tr>
@@ -154,7 +181,7 @@
 				$sql = "select * from list";
 				$pdo -> exec('set names utf8');
 			?>
-			<div class="alert alert-info">借阅列表</div>
+			<div class="alert alert-info">全部借阅信息表</div>
 			<table border="1" class="table table-hover">
 				<thead>
 					<tr>
@@ -187,7 +214,7 @@
 				$sql = "select * from msg";
 				$pdo -> exec('set names utf8');
 			?>
-			<div class="alert alert-info">留言列表</div>
+			<div class="alert alert-info">全部留言信息表</div>
 			<table border="1" class="table table-hover">
 				<thead>
 					<tr>

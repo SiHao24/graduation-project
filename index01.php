@@ -13,7 +13,7 @@
         <div class="content">
             <div class="avatar"></div>
             <div class="theme">
-                <a class="forward" href="index.php">学习，成为更好的自己<span class="arrow"></span></a>
+                <a class="forward" href="user/index.php">学习，成为更好的自己<span class="arrow"></span></a>
             </div>
         </div>
     </div>

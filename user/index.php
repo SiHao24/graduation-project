@@ -26,7 +26,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="index01.php" class="navbar-brand"><i class="iconfont">&#xe646;</i></a>
+						<a href="../index01.php" class="navbar-brand"><i class="iconfont">&#xe646;</i></a>
 					</div>
 					<div class="collapse navbar-collapse" id="navbarCollapse">
 						<ul class="nav navbar-nav" id="navBar">
